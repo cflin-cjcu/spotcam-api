@@ -7,7 +7,9 @@ class V1 extends REST_Controller{
         $location = array('lat' => $this->post('lat'), 
                           'long' => $this->post('long'),
                           'type' => $this->post('type'),
-                          'lname' => $this->post('lname')
+                          'lname' => $this->post('lname'),
+                          'city' => $this->post('city'),
+                          'country' => $this->post('country')
                           );
 
         $this->location_model->postLocation($location);
